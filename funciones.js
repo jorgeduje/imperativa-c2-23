@@ -4,6 +4,7 @@
 
 
 // crear la funcion ---> declarar la funcion
+
 function sumar(){
     // bloque de codigo
     let n1 = 2
@@ -17,7 +18,13 @@ function sumar(){
 let resultado = sumar()
 console.log(resultado)
 
+function login (){
+    let userName = "pepito@gmail.com"
+    // preguntarle al backend si existe
+    // si existe ---> navega a la pantalla del home
+}
 
+login()
 
 
 
