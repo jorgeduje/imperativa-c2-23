@@ -165,3 +165,18 @@ console.log("admitidos")
 console.log(arrayCorreosAdmitidos)
 console.log("descartados")
 console.log(arrayCorreosDescartados)
+
+let numeros = [10, 5 ,2 ,3]
+
+const calcularMenor = (arr)=>{
+
+  let menor = arr[0] // 10 - 5 - 2
+  for (let i = 0; i < arr.length; i++) {
+    if( menor > arr[i] ){
+      menor = arr[i]
+    }
+  }
+
+  return menor
+
+}
