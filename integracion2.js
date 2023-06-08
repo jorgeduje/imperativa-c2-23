@@ -152,7 +152,7 @@ const verificarCorreos = ( array )=>{
       }
   }
 
-  // arrayCorreosPendientes = []
+  arrayCorreosPendientes = []
 
 }
 console.log("-----------")
