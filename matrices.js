@@ -136,7 +136,8 @@ const sumarColDos =()=>{
 
     let acc = 0
     for (let i = 0; i < matrizUnMillon.length; i++) {
-        if(matrizUnMillon[i][2] !== undefined){
+        console.log(typeof matrizUnMillon[i][2])
+        if(typeof matrizUnMillon[i][2] === "number" ){
             acc += matrizUnMillon[i][2]
         }
     }
