@@ -146,3 +146,20 @@ const sumarColDos =()=>{
 
 let a = sumarColDos()
 console.log(a)
+
+let b = 123
+
+let x = b.toString()
+console.log(x)
+let z = x.split("")
+console.log(z)
+let y = z.reverse()
+console.log(y)
+let nose = y.join("")
+console.log(nose)
+let noseFinal = +nose
+console.log(noseFinal)
+
+let u = "123151234"
+console.log(u)
+console.log(+u)
