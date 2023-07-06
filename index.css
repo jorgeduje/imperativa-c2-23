@@ -1,0 +1,15 @@
+h1 {
+  color: peru;
+}
+
+.tarjetas {
+  border: 2px solid peru;
+}
+
+#container-tarjetas {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}

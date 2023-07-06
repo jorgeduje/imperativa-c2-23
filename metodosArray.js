@@ -10,31 +10,31 @@ let arrayCuentas = [
   {
     nroCuenta: 5486273622,
     tipoDeCuenta: "Cuenta Corriente",
-    saldoEnPesos: 1,
+    saldoEnPesos: 100,
     titularCuenta: "Abigael Natte",
   },
   {
     nroCuenta: 1183971869,
     tipoDeCuenta: "Caja de Ahorro",
-    saldoEnPesos: 2,
+    saldoEnPesos: 222,
     titularCuenta: "Ramon Connell",
   },
   {
     nroCuenta: 9582019689,
     tipoDeCuenta: "Caja de Ahorro",
-    saldoEnPesos: 3,
+    saldoEnPesos: 123,
     titularCuenta: "Jarret Lafuente",
   },
   {
     nroCuenta: 1761924656,
     tipoDeCuenta: "Cuenta Corriente",
-    saldoEnPesos: 8,
+    saldoEnPesos: 548,
     titularCuenta: "Ansel Ardley",
   },
   {
     nroCuenta: 7401971607,
     tipoDeCuenta: "Cuenta Unica",
-    saldoEnPesos: 9,
+    saldoEnPesos: 129,
     titularCuenta: "Jacki Shurmer",
   },
 ];
@@ -138,4 +138,21 @@ let el = arrayCuentas.find(
 
 //ANCHOR ---> reduce
 
+let total = arrayCuentas.reduce((acc, elemento) => {
+  return acc + elemento.saldoEnPesos;
+}, 0);
+
 //ANCHOR ---> sort
+let numeros = [1, 5, 2, 6, 3];
+
+arrayCuentas.sort( (a, b)=> {
+  if (a.saldoEnPesos > b.saldoEnPesos) {
+    return -1;
+  }
+  if (b.saldoEnPesos > a.saldoEnPesos) {
+    return 1;
+  }
+  return 0;
+} )
+
+console.log(arrayCuentas)
